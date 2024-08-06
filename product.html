@@ -11,7 +11,7 @@
     <nav class="bg-green-200 p-3 z-10 flex justify-between shadow-2xl  sticky top-0">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg class="w-4 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+        <svg id="menuicon"class="w-4 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
             <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
           </svg>
           
@@ -30,17 +30,38 @@
         </ul>
 
     </nav>
+
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right:-50%;" >  
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>    
+              <ul class="flex flex-col gap-10 items-center ">
+                <li>
+                    <a href="index.html" class="hover:underline hover:text-black" href="#">Home</a>
+                </li>
+    
+                <li>
+                    <a href="product.html" class="hover:underline hover:text-black" href="#">Products</a>
+                </li>
+    
+                <li>
+                    <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
+                </li>
+            </ul>
+
+    </section>   
     
     <!--Product-->
     <section class="text-center">
         <h1 class="font-bold text-3xl mt-8 text-center">Our Products</h1>
         <div class="flex items-center justify-center">
-            <input type="text" placeholder="Search for a Product.." class="border border-black p-2 m-3 " style="width: 80%;">
+            <input type="text" id="search" placeholder="Search for a Product.." class="border border-black p-2 m-3 " style="width: 80%;">
         </div>
     </section>
 
     <section class="text-center p-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 mt-10" >
+    <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 mt-10" >
         <div>
             <img src="./image/besteller_1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
             <h1>Rose Plant</h1>
@@ -101,6 +122,8 @@
         <p>Experience the beauty of fresh flowers delivered with care, 24/7 support availabl.e</p>
         <p>@ 2024 Greenday.com</p>
     </section>
+
+    <script src="product.js"></script>
 
     
 </body>

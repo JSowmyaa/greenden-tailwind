@@ -10,7 +10,7 @@
     <nav class="bg-green-200 p-3 z-10 flex justify-between shadow-2xl  sticky top-0">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg class="w-4 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+        <svg id="menuicon" class="w-4 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
             <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
           </svg>
           
@@ -29,6 +29,27 @@
         </ul>
 
     </nav>
+
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right:-50%;" >  
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>    
+              <ul class="flex flex-col gap-10 items-center ">
+                <li>
+                    <a href="index.html" class="hover:underline hover:text-black" href="#">Home</a>
+                </li>
+    
+                <li>
+                    <a href="product.html" class="hover:underline hover:text-black" href="#">Products</a>
+                </li>
+    
+                <li>
+                    <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
+                </li>
+            </ul>
+
+    </section>   
 
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -51,6 +72,7 @@
             </form>
         </div>
       </section>
+      
 
     <section class="bg-green-200 p-10 flex flex-col gap-5">
         <h1 class="text-3xl font-bold">GREENDEN</h1>
@@ -58,6 +80,6 @@
         <p>@ 2024 Greenday.com</p>
     </section>
 
-    
+    <script src="contact.js"></script>
 </body>
 </html>
